@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #212121;
+}
+
+.t--orange {
+  color: #f59614;
+}
+
+.t--white {
+  color: white;
+}
+
+.t--white:hover {
+  color: #f59614;
+}
+
+.t--orangegradient {
+  background: -webkit-gradient(linear, left top, right top, from(#F88614), to(#b62d5c)) !important;
+  background: linear-gradient(to right, #F88614, #b62d5c) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: bold !important;
+}
+
+.t--bold {
+  font-weight: bold;
+}
+
+.c-navbar, .c-home, .c-about, .c-resume, .c-portofolio, .c-contact, .c-footer {
+  background-color: #262626;
+  color: white;
+}
+
+.c-home {
+  padding: 5em 3em 5em 3em;
+}
+
+.c-home .l__wrapperimage {
+  margin-top: 125px;
+}
+
+@media (min-width: 992px) {
+  .c-home .l__wrapperimage {
+    margin-top: 0;
+  }
+}
+
+.c-about {
+  padding: 0em 0em 0em 3em;
+}
+
+.c-resume {
+  padding: 2em 3em 5em 3em;
+}
+
+.c-resume .l__timeline ul {
+  list-style: none;
+  width: 50%;
+}
+
+.c-resume .l__timeline ul::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  left: 25%;
+}
+
+.c-resume .l__timeline ul li::before {
+  content: '';
+  background: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 23.5%;
+}
+
+.c-portofolio {
+  padding: 2em 3em 5em 3em;
+}
+
+.c-contact {
+  padding: 2em 3em 2em 3em;
+}
+
+.c-contact .l__wrappericon {
+  margin-top: 75px;
+}
+
+.c-contact i {
+  font-size: 50px;
+  margin: 0 20px 0 20px;
+}
+
+.c-contact i:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#F88614), to(#b62d5c)) !important;
+  background: linear-gradient(to right, #F88614, #b62d5c) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  cursor: pointer;
+}
+
+.c-footer {
+  padding: 1em 3em 0em 3em;
+}
+
+.o__button {
+  padding: 1em;
+  background: -webkit-gradient(linear, left top, right top, from(#F88614), to(#b62d5c));
+  background: linear-gradient(to right, #F88614, #b62d5c);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.o__button:hover {
+  border-radius: 10px;
+}
+
+.l__imagediamond {
+  width: 175px;
+  height: 175px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.l__imagesource {
+  -webkit-transform: rotate(-45deg) scale(1.42) translateX(-3%);
+          transform: rotate(-45deg) scale(1.42) translateX(-3%);
+  width: 100%;
+  height: 100%;
+  background: url(../image/fotoformalputih.png);
+  background-size: cover;
+}
+/*# sourceMappingURL=index2.css.map */

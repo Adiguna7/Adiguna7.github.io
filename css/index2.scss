@@ -1,0 +1,141 @@
+//SETUP COLOR
+$orange: #f59614;
+$orange2: #F88614;
+$orange3: #b62d5c;
+$grey: #262626;
+$grey2: #212121;
+
+
+//SETUP FONT
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+//SETUP PAGE
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: $grey2;
+}
+
+.t{
+    &--orange{
+        color: $orange;
+    }
+    &--white{
+        color: white;
+        &:hover{
+            color: $orange;
+        }
+    }
+    &--orangegradient{
+        background: linear-gradient(to right, $orange2, $orange3) !important;
+        -webkit-background-clip: text !important;        
+        -webkit-text-fill-color: transparent !important;
+        font-weight: bold !important;
+    }
+    &--bold{
+        font-weight: bold;
+    }
+}
+
+.c{
+    &-navbar, &-home, &-about, &-resume, &-portofolio, &-contact, &-footer{
+        background-color: $grey;
+        color: white;
+    }
+    &-home{
+        padding: 5em 3em 5em 3em;
+        .l__wrapperimage{
+            margin-top: 125px;
+            @media (min-width: 992px) {
+                margin-top: 0;
+            }
+        }
+    }
+    &-about{
+        padding: 0em 0em 0em 3em;
+    }
+    &-resume{
+        padding: 2em 3em 5em 3em;
+        .l__timeline{
+            ul{
+                list-style: none;
+                width: 50%;
+                &::before{
+                    content: '';
+                    width: 2px;
+                    height: 100%;
+                    background: white;                    
+                    position: absolute;
+                    left: 25%;
+                }
+                li{
+                    &::before{
+                        content: '';
+                        background: white; 
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        left: 23.5%;
+                        // z-index: 400;
+                    }
+                }
+            }            
+        }
+    }
+    &-portofolio{
+        padding: 2em 3em 5em 3em;
+    }
+    &-contact{
+        padding: 2em 3em 2em 3em;
+        .l__wrappericon{
+            margin-top: 75px;
+        }
+        i{
+            font-size: 50px;
+            margin: 0 20px 0 20px;
+            &:hover{
+                background: linear-gradient(to right, $orange2, $orange3) !important;
+                -webkit-background-clip: text !important;        
+                -webkit-text-fill-color: transparent !important;
+                cursor: pointer;
+            }            
+        }
+    }
+    
+    &-footer{
+        padding: 1em 3em 0em 3em;
+    }
+}
+
+.o{
+    &__button{
+        padding: 1em;
+        background: linear-gradient(to right, $orange2, $orange3);
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        &:hover{
+            border-radius: 10px;
+        }        
+    }
+}
+
+.l{
+    &__imagediamond{
+        width: 175px;
+        height: 175px;
+        background-color: white;        
+        transform: rotate(45deg);
+        overflow: hidden;        
+    }
+    &__imagesource{        
+        transform: rotate(-45deg) scale(1.42) translateX(-3%);        
+        width: 100%;    
+        height: 100%;
+        background: url(../image/fotoformalputih.png);
+        background-size: cover;                        
+    }
+}
