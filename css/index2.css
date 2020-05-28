@@ -83,6 +83,12 @@ body, html {
   left: 23.5%;
 }
 
+@media (max-width: 576px) {
+  .c-resume .l__timeline ul li::before {
+    left: 22.5%;
+  }
+}
+
 .c-portofolio {
   padding: 2em 3em 5em 3em;
 }
@@ -98,6 +104,12 @@ body, html {
 .c-contact i {
   font-size: 50px;
   margin: 0 20px 0 20px;
+}
+
+@media (max-width: 576px) {
+  .c-contact i {
+    font-size: 40px;
+  }
 }
 
 .c-contact i:hover {
@@ -123,6 +135,8 @@ body, html {
   height: -moz-fit-content;
   height: fit-content;
   cursor: pointer;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
 }
 
 .o__button:hover {
@@ -139,11 +153,11 @@ body, html {
 }
 
 .l__imagesource {
-  -webkit-transform: rotate(-45deg) scale(1.42) translateX(-3%);
-          transform: rotate(-45deg) scale(1.42) translateX(-3%);
+  -webkit-transform: rotate(-45deg) scale(1.42) translate(-1.5%, 7%);
+          transform: rotate(-45deg) scale(1.42) translate(-1.5%, 7%);
   width: 100%;
   height: 100%;
-  background: url(../image/fotoformalputih.png);
+  background: url(../image/fotononformal2.png);
   background-size: cover;
 }
 /*# sourceMappingURL=index2.css.map */
