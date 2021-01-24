@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'josefin';
+    src: url('josefin.ttf');
+}
+
+*{
+    font-family: 'josefin' !important;
+    color: #FFFFFF;
+}
+
+body{
+    background-color: #121212;
+}

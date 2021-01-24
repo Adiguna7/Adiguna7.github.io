@@ -1,0 +1,12 @@
+/home/adiguna7/belajar/wasm/facerecognition-opencvjs/target/debug/deps/bytemuck-5c370a2f56584a7f.rmeta: /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/lib.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/zeroable.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/pod.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/contiguous.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/offset_of.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/transparent.rs
+
+/home/adiguna7/belajar/wasm/facerecognition-opencvjs/target/debug/deps/libbytemuck-5c370a2f56584a7f.rlib: /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/lib.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/zeroable.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/pod.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/contiguous.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/offset_of.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/transparent.rs
+
+/home/adiguna7/belajar/wasm/facerecognition-opencvjs/target/debug/deps/bytemuck-5c370a2f56584a7f.d: /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/lib.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/zeroable.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/pod.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/contiguous.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/offset_of.rs /home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/transparent.rs
+
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/lib.rs:
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/zeroable.rs:
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/pod.rs:
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/contiguous.rs:
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/offset_of.rs:
+/home/adiguna7/.cargo/registry/src/github.com-1ecc6299db9ec823/bytemuck-1.5.0/src/transparent.rs:
