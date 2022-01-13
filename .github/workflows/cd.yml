@@ -27,4 +27,11 @@ jobs:
         run: npm run build
 
       - name: Generate
-        run: npm run generate      
+        run: npm run generate    
+
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: docs/*
+          commit-msg: updated github pages
+          github-token: ${{ secrets.GITHUB_TOKEN }}
