@@ -6,7 +6,7 @@
         style="height: 100%"
       >
         <vue-typed-js
-          :strings="['TEST CD', 'Adi/Suryo']"
+          :strings="['Suryo Adiguna', 'Adi/Suryo']"
           :typeSpeed="100"
           :startDelay="100"
           :backSpeed="100"
