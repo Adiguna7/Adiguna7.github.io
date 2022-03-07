@@ -76,6 +76,9 @@
           <div class="color--red text-h4 mt-3 font-weight-bold text-center">
             Amazing Peoples
           </div>
+          <small class="text-center mt-3"
+            >*Click on experience organization for details</small
+          >
         </v-col>
         <v-dialog v-model="dialog" width="700">
           <v-card>
@@ -90,7 +93,21 @@
               >
                 <v-img
                   :src="require('~/static/' + foldername + '/' + img)"
-                ></v-img>
+                  :lazy-src="require('~/assets/img/lazy-load.jpg')"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="primary"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
               </v-carousel-item>
             </v-carousel>
 
@@ -164,7 +181,11 @@
             >
               <v-row class="flex-column">
                 <div
-                  class="color--red font-weight-bold text-left text-md-right"
+                  class="color--red font-weight-bold text-left text-md-right modal-on"
+                  @click="
+                    foldername = 'iris'
+                    dialog = true
+                  "
                 >
                   ITS Robot with Intelligent System [IRIS Team]
                 </div>
@@ -191,7 +212,13 @@
               class="mt-3 flex-row"
             >
               <v-row class="justify-start justify-md-end">
-                <div class="color--red font-weight-bold">
+                <div
+                  class="color--red font-weight-bold modal-on"
+                  @click="
+                    foldername = 'mage6'
+                    dialog = true
+                  "
+                >
                   Multimedia and Game Event 6 [MAGE 6]
                 </div>
                 <div class="mt-2 text-subtitle-2 text-left text-md-right">
@@ -325,7 +352,17 @@
           <v-img
             :src="require('~/assets/img/' + img.link)"
             transition="scale-transition"
-          ></v-img>
+            :lazy-src="require('~/assets/img/lazy-load.jpg')"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="primary"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -335,19 +372,24 @@
         style="height: 100%"
       >
         <div class="white--text text-sm-h4 text-h5 text-center">
-          Feel free to contact
+          Feel free to reach me
           <span style="color: #e31b6d">me</span>
           at
         </div>
         <div class="mt-9">
-          <v-btn icon href="https://github.com" text class="px-7">
+          <v-btn
+            icon
+            href="https://www.linkedin.com/in/suryo-adiguna-635b9818a/"
+            text
+            class="px-7"
+          >
             <v-icon class="text-h3 color--icon"> mdi-linkedin </v-icon>
           </v-btn>
-          <v-btn icon href="https://github.com" text class="px-7">
-            <v-icon class="text-h3 color--icon"> mdi-instagram </v-icon>
+          <v-btn icon href="https://github.com/Adiguna7" text class="px-7">
+            <v-icon class="text-h3 color--icon"> mdi-github </v-icon>
           </v-btn>
-          <v-btn icon href="https://github.com" text class="px-7">
-            <v-icon class="text-h3 color--icon"> mdi-discord </v-icon>
+          <v-btn icon href="mailto:suryoadiguna@gmail.com" text class="px-7">
+            <v-icon class="text-h3 color--icon"> mdi-gmail </v-icon>
           </v-btn>
         </div>
       </v-row>
@@ -393,6 +435,13 @@ export default {
         jmmi: ['certificate-jmmi.png'],
         mage5: ['certificate-mage5.png'],
         mage6: ['certificate-mage6.png'],
+        iris: [
+          '1st&bestdesign-regional-20.png',
+          '1st&beststrategi-nasional-20.png',
+          '2nd-nasional-21.png',
+          'finalis-nasional-21.png',
+          'umum-nasional-20.png',
+        ],
       },
       foldername: 'jmmi',
     }
