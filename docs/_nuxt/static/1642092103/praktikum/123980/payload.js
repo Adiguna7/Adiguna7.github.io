@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/praktikum/123980", {data:[{}],fetch:[],mutations:void 0});
