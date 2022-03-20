@@ -44,8 +44,8 @@
             real-world experience as Backend Engineer.
           </div>
           <div class="mt-3 text-center text-md-left">
-            Offers Ai/Robotics/IOT, Web Developer skills. Eager to learn new
-            technologies.
+            Offers Ai/Robotics/IOT, Backend Engineer and Web Developer skills.
+            Eager to learn new technologies.
             <br />
             <br />
             Love problem solving, Digital electronics and Computer Vision.
@@ -70,8 +70,8 @@
         <v-col cols="12" md="12" class="d-flex flex-column mt-9">
           <div class="font-weight-bold text-h6 text-center">Experienced</div>
           <div class="mt-3 text-h6 text-center">
-            Involved in some project as web developer, and robotic programmer
-            with
+            Involved in some project as web developer, backend engineer and
+            robotic programmer with
           </div>
           <div class="color--red text-h4 mt-3 font-weight-bold text-center">
             Amazing Peoples
@@ -322,37 +322,48 @@
           </div>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12 d-flex justify-center">
-          <v-btn
-            text
-            class="white--text font-weight-bold"
-            @click="imagePortofolio('all')"
-          >
-            All
-          </v-btn>
-          <v-btn
-            text
-            class="white--text font-weight-bold"
-            @click="imagePortofolio('js')"
-          >
-            Javascript / Php
-          </v-btn>
-          <v-btn
-            text
-            class="white--text font-weight-bold"
-            @click="imagePortofolio('vue')"
-          >
-            Vue / Php
-          </v-btn>
-        </v-col>
-      </v-row>
       <v-row class="mt-9 justify-center">
-        <v-col v-for="img in portofolio" :key="img.id" cols="12" sm="4">
+        <v-dialog v-model="dialog_portofolio" width="500">
+          <v-card>
+            <v-card-title class="text-h5 bg-all font-weight-bold">
+              {{ active_text_portofolio.title }}
+            </v-card-title>
+            <v-card-text class="mt-3">
+              {{ active_text_portofolio.description }}
+              <br />
+              <br />
+              Stacks: {{ active_text_portofolio.stacks }}
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                class="font-weight-bold"
+                text
+                @click="dialog_portofolio = false"
+              >
+                Close
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+        <v-col
+          v-for="(img, index) in portofolio"
+          :key="img.id"
+          cols="12"
+          sm="4"
+        >
           <v-img
             :src="require('~/assets/img/' + img.link)"
             transition="scale-transition"
             :lazy-src="require('~/assets/img/lazy-load.jpg')"
+            style="cursor: pointer"
+            @click.stop="
+              dialog_portofolio = true
+              active_text_portofolio = text_portofolio[index]
+            "
           >
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
@@ -417,6 +428,9 @@ export default {
         { id: 7, link: 'mage6.png' },
         { id: 8, link: 'b201rent.png' },
         { id: 9, link: 'digdaya.png' },
+        { id: 10, link: 'tangankanan.png' },
+        { id: 11, link: 'beacon.png' },
+        { id: 12, link: 'automatic.png' },
       ],
       image: [
         { id: 1, link: 'esport.png' },
@@ -444,12 +458,89 @@ export default {
         ],
       },
       foldername: 'jmmi',
+      dialog_portofolio: false,
+      text_portofolio: [
+        {
+          title: 'Mage 5',
+          description:
+            'Mage 5 is an annual competition organized by the faculty, this website is used as an information center by participants, as well as registration.',
+          stacks: ['laravel', 'bootstrap'],
+        },
+        {
+          title: 'Evolty',
+          description:
+            'Evolty is an annual competition organized by the faculty, this website is used as an information center by participants, as well as registration and online olympiad.',
+          stacks: ['laravel', 'bootstrap', 'mysql'],
+        },
+        {
+          title: 'GamerStore',
+          description:
+            'Try to create online shop for gamer, but has been deprecated',
+          stacks: ['laravel', 'bootstrap', 'mysql'],
+        },
+        {
+          title: 'JMMI ITS',
+          description: 'Create website to publication about islamic article',
+          stacks: ['wordpress', 'bootstrap', 'php'],
+        },
+        {
+          title: 'Mage 5',
+          description:
+            'Mage 5 is an annual competition organized by the faculty, this website is used as an information center by participants, as well as registration.',
+          stacks: ['laravel', 'bootstrap', 'mysql'],
+        },
+        {
+          title: 'SewaAja',
+          description:
+            'Try to create platform for rent intended for my campus. has been deprecated',
+          stacks: ['laravel', 'bootstrap', 'mysql'],
+        },
+        {
+          title: 'Mage 6',
+          description:
+            'Mage 6 is an annual competition organized by the faculty, this website is used as an information center by participants, as well as registration and online olympiad.',
+          stacks: ['laravel', 'vue', 'mysql', 'nginx'],
+        },
+        {
+          title: 'B201 Rent',
+          description:
+            'Try to create platform for rent intended for my faculty. has been deprecated',
+          stacks: ['php', 'mysql'],
+        },
+        {
+          title: 'PT Digdaya',
+          description: 'Create landing page for PT Digdaya',
+          stacks: ['bootstrap'],
+        },
+        {
+          title: 'Tangan Kanan',
+          description:
+            'Tangan kanan is a platform to get relief funds for people in need',
+          stacks: ['react', 'next', 'nodejs', 'express', 'github ci/cd'],
+        },
+        {
+          title: 'Beacon 2021',
+          description:
+            'Beacon 2021 is an annual competition organized by biomedical engineering major (ITS), this website is used as an information center by participants, as well as registration and online olympiad.',
+          stacks: ['laravel', 'bootstrap', 'mysql', 'nginx', 'docker'],
+        },
+        {
+          title: 'Automatic poultry feeder and drinker (IOT)',
+          description:
+            'use mqtt to create an integrated iot system, for automatic feeding and drinking of poultry',
+          stacks: ['mqtt', 'websocket', 'nodejs', 'c', 'nodemcu'],
+        },
+      ],
+      active_text_portofolio: null,
     }
   },
   watch: {
     $vssWidth(val) {
       this.widthSize = val
     },
+  },
+  created() {
+    this.active_text_portofolio = this.text_portofolio[0]
   },
   mounted() {
     this.$ga.page(this.$router)
