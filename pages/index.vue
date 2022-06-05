@@ -51,10 +51,31 @@
             Love problem solving, Digital electronics and Computer Vision.
           </div>
         </v-col>
-        <v-col md="5" class="d-flex justify-center">
-          <div class="l__imagediamond">
-            <div class="l__imagesource"></div>
-          </div>
+        <v-col md="5" class="d-flex justify-center justify-md-end">
+          <svg viewbox="1 1 8 8" style="width: 275px">
+            <pattern
+              id="image"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+            >
+              <image
+                xlink:href="~/assets/img/fotononformal4.png"
+                x="0.1"
+                y="1.2"
+                height="9.25"
+                width="9.25"
+              />
+            </pattern>
+            <path
+              d="M5.5 1.5 L8.5 4.5 Q9 5 8.5 5.5 L5.5 8.5 Q5 9 4.5 8.5 L 1.5 5.5 Q1 5 1.5 4.5 L4.5 1.5 Q 5 1 5.5 1.5z"
+              fill="white"
+            />
+            <path
+              d="M5.5 1.5 L8.5 4.5 Q9 5 8.5 5.5 L5.5 8.5 Q5 9 4.5 8.5 L 1.5 5.5 Q1 5 1.5 4.5 L4.5 1.5 Q 5 1 5.5 1.5z"
+              fill="url(#image)"
+            />
+          </svg>
         </v-col>
       </v-row>
     </v-container>
@@ -596,23 +617,6 @@ export default {
 
 .color--red {
   color: #e31b6d;
-}
-
-.l {
-  &__imagediamond {
-    width: 175px;
-    height: 175px;
-    background-color: white;
-    transform: rotate(45deg);
-    overflow: hidden;
-  }
-  &__imagesource {
-    transform: rotate(-45deg) scale(1.42) translate(-1.5%, 7%);
-    width: 100%;
-    height: 100%;
-    background: url('~assets/img/fotononformal4.png');
-    background-size: cover;
-  }
 }
 
 .c-home {
