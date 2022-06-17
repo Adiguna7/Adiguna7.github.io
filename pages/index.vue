@@ -60,11 +60,11 @@
               patternUnits="userSpaceOnUse"
             >
               <image
-                xlink:href="~/assets/img/fotononformal4.png"
-                x="0.1"
-                y="1.2"
-                height="9.25"
-                width="9.25"
+                xlink:href="~/assets/img/1655418523817.jpeg"
+                x="1.2"
+                y="1.25"
+                height="7.5"
+                width="7.5"
               />
             </pattern>
             <path

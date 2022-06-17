@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{419:function(t,e,n){"use strict";n.r(e);var r={asyncData:function(t){return t.redirect("https://line.me/ti/p/o8C_pypi95"),{}}},c=n(68),component=Object(c.a)(r,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("tcerider")])}),[],!1,null,null,null);e.default=component.exports}}]);
